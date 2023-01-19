@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Formulário de cadastro</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <section class="container">
+      <div class="banner">
+        <h1>Olá seja bem vindo!</h1>
+        <img src="./assets/img/background.png" alt="" />
+      </div>
+
+      <form action="/" method="POST" class="formulario">
+        <h1>Faça seu cadastro</h1>
+
+        <label>Nome</label>
+        <input type="text" name="nome" class="nome validar" />
+        <label>Sobrenome</label>
+        <input type="text" name="sobrenome" class="sobrenome validar" />
+
+        <label>CPF</label>
+        <input type="text" name="cpf" class="cpf validar" />
+        <label>Usuário</label>
+        <input type="text" name="usuario" class="usuario validar" />
+        <label>Senha</label>
+        <input type="password" name="senha" class="senha validar" />
+        <label>Confirmar senha</label>
+        <input
+          type="password"
+          name="confirma-senha"
+          class="confirma-senha validar"
+        />
+        <button type="submit" class="btn-enviar">Enviar</button>
+      </form>
+    </section>
+
+    <script src="./assets/js/validaCPF.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
